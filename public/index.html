@@ -36,6 +36,7 @@
 <script src="js/dropdown.js"></script>
 <script src="js/tinynav.min.js"></script>
 <script src="js/camera.min.js"></script>
+<script src="js/isotope.js"></script>
 <script src="js/jquery.fancybox.js?v=2.0.6"></script>
 <script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
 <script src="js/jquery.ui.totop.min.js"></script>
@@ -44,6 +45,8 @@
 <script src="js/jflickrfeed.min.js"></script>
 <script src="js/faq-functions.js" ></script>
 <script src="js/theme-functions.js"></script>
+<script src="js/jquery.googlemaps1.01.js"></script>
+
 <script>
 $(document).ready(function() { 
     //Camera Jquery
@@ -54,6 +57,25 @@ $(document).ready(function() {
     });	  	
 });
 </script> 
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyBbNN6v1D00y6mUXbtPUnB7_b8c-Xs1ing"></script>
+<script type="text/javascript">
+$(document).ready(function() { 
+  $('#map_canvas').googleMaps({
+      scroll: false,
+      latitude: 41.310715,
+      longitude: -72.930036,
+      depth: 15, 
+      markers: {
+          latitude:     41.310715,
+          longitude: -72.930036,
+          icon: { 
+              image: 'images/map-marker.png',  
+              iconSize: '55, 61', 
+          }                 
+      }
+   }); 
+}); 
+</script>
 
 <!-- IE Fix for HTML5 Tags -->
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -68,11 +90,7 @@ $(document).ready(function() {
             <a class="trigger" href="#"></a>
             <div class="social-panel">
                 <ul>
-                    <li><a href="#"><img src="images/socials/social10.gif" alt="" /></a></li>
-                    <li><a href="#"><img src="images/socials/social32.gif" alt="" /></a></li>
-                    <li><a href="#"><img src="images/socials/social9.gif" alt="" /></a></li>
-                    <li><a href="#"><img src="images/socials/social15.gif" alt="" /></a></li>
-                    <li><a href="#"><img src="images/socials/social25.gif" alt="" /></a></li>
+                    <li><a href="https://www.facebook.com/pages/Yale-Undergraduate-Consulting/294539093896839"><img src="images/socials/social10.gif" alt="" /></a></li>
                 </ul>
             </div>
         </div>            
@@ -87,38 +105,13 @@ $(document).ready(function() {
         <!-- mainmenu start here -->
         <nav id="mainmenu">
             <ul id="menu">
-                <li class="selected dropdown"><a href="index.html">home</a>
-                	<ul> 
-                        <li><a href="index-layout2.html"><span>-</span> home layout 2</a></li>
-                        <li><a href="index-layout3.html"><span>-</span> home layout 3</a></li>
-                        <li><a href="index-layout4.html"><span>-</span> home layout 4</a></li>    	
-                    </ul>
+                <li><a href="index.html">home</a>
                 </li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="services.html">services</a></li>
-                <li class="dropdown"><a href="#">portfolio</a>
-                    <ul> 
-                        <li><a href="portfolio-2col.html"><span>-</span> portfolio 2 column</a></li>
-                        <li><a href="portfolio-3col.html"><span>-</span> portfolio 3 column</a></li>
-                        <li><a href="portfolio-4col.html"><span>-</span> portfolio 4 column</a></li>    	
-                    </ul>
+                <li><a href="#div-about">about</a></li>
+                <li><a href="#div-services">services</a></li>
+                <li><a href="#div-portfolio">portfolio</a>
                 </li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li class="dropdown"><a href="#">pages</a>
-                    <ul> 
-                        <li><a href="column.html"><span>-</span> column page</a></li>
-                        <li><a href="tables.html"><span>-</span> table page</a></li>
-                        <li><a href="button-list.html"><span>-</span> button &amp; list page</a></li>
-                        <li><a href="typhography.html"><span>-</span> typhography page</a></li>
-                        <li><a href="testimonials.html"><span>-</span> testimonials page</a></li>  
-                        <li><a href="pricing.html"><span>-</span> pricing page</a></li>
-                        <li><a href="faq.html"><span>-</span> faq page</a></li>
-                        <li><a href="single.html"><span>-</span> single page</a></li>  
-                        <li><a href="fullwidth.html"><span>-</span> fullwidth page</a></li>
-                        <li><a href="404.html"><span>-</span> 404 page</a></li>                           	
-                    </ul>
-                </li>
+                <li><a href="#div-contact">contact</a></li>
             </ul>
         </nav>
         <!-- mainmenu end here -->
@@ -134,22 +127,22 @@ $(document).ready(function() {
         <!-- slide 1 here -->
         <div data-src="images/slideshow/bg-slide1.jpg">
             <div class="caption-type1 moveFromLeft">
-                <h1>We are the Yale Undergraduate Consulting Group</h1>
-                <p>We are teh Awesom3!!!1111!. insert caption here</p>
+                <h1>Yale Undergraduate Consulting Group</h1>
+                <p>We are a not-for-profit, student-run consulting, marketing, and product development organization at Yale.</p>
             </div>
             <div class="caption-type1 moveFromRight">
                 <img src="images/slideshow/logo_yale.gif" alt=""/>
             </div>
         </div>
         
-        <!-- slide 2 here -->
-        <div data-src="images/slideshow/bg-slide2.jpg">
-            <div class="caption-type2 moveFromTop">
-                <h1>We build rock solid Responsive website</h1>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique sunt in culpa qui officia deserunt</p>
+        <!-- slide 2 here (same as slide 1) -->
+        <div data-src="images/slideshow/bg-slide1.jpg">
+            <div class="caption-type1 moveFromLeft">
+                <h1>Yale Undergraduate Consulting Group</h1>
+                <p>We are a not-for-profit, student-run consulting, marketing, and product development organization at Yale.</p>
             </div>
-            <div class="caption-type2 moveFromBottom">
-                <img src="images/slideshow/intro_products.jpg" alt="" />
+            <div class="caption-type1 moveFromRight">
+                <img src="images/slideshow/logo_yale.gif" alt=""/>
             </div>
         </div>
         
@@ -186,120 +179,280 @@ $(document).ready(function() {
 </section>
 <!-- featured client end here -->
 
-<!-- maincontent start here -->
+<!-- pagetitle start here -->
+<div class="label" id="div-about">
+    <section id="pagetitle-wrapper">
+        <div class="pagetitle-content">    
+            <h2>About Us</h2>   
+        </div>
+    </section>
+</div>
+<!-- pagetitle end here --> 
+
+<!-- about us start here -->
 <section id="content-wrapper">
     <div class="row">
-        <div class="three columns mobile-two">
-            <h5>Make life happier &raquo;</h5>
-            <div class="link-zoom">
-                <a class="fancybox" href="images/portfolio-big/pf-big.jpg" title="Hyperion - Modern Minimalist Responsive 3">
-                    <img src="images/sample-images/front-img1.jpg" alt="" class="fade" />
-                </a>
+        <div class="twelve columns">
+            <h5>Who We Are</h5>
+                <p>The Yale Undergraduate Consulting Group (formerly Maya) is an undergraduate-run consulting group offering strategy consulting, marketing, and product development services to businesses. We offer a full range of consulting services, take a hands-on approach to developing applicable strategies, and help implement them for our clients.</p>
+                <p>Teams of four or five students are led by a Project Manager who acts as the primary client liaison and ensures the team provides only the highest quality outcome. Teams are designed to include a balance of experienced upperclassmen and newcomers, and they often include students with internship experience at major consulting, financial, marketing, or product develoment firms. The recruitment process is a careful, highly selective process modeled after the best practices of management consulting and technology firms so our clients can be confident that only the most dedicated and effective students are on each engagement.</p>
+                <img src="images/members.jpeg" alt="team" />
             </div>
         </div>
-        <div class="three columns mobile-two">
-            <h5>Why we made it &raquo;</h5>
-            <div class="link-url">
-                <a href="http://themeforest.net/item/sirius-modern-minimalist-responsive-2/2838944?ref=Indonez" target="_self">
-                    <img src="images/sample-images/front-img2.jpg" alt="" class="fade" />
-                </a>
-            </div>
+</section>
+<!--about us end here -->
+
+<!-- pagetitle start here -->
+<div class="label" id="div-services">
+    <section id="pagetitle-wrapper">
+        <div class="pagetitle-content">    
+            <h2>Services</h2>   
         </div>
-        <div class="three columns mobile-two">
-            <h5>Known the process &raquo;</h5>
-            <div class="link-more">
-                <a href="about.html">
-                    <img src="images/sample-images/front-img3.jpg" alt="" class="fade" />
-                </a>
-            </div>
-        </div>
-        <div class="three columns mobile-two">
-            <h5>Take a tour &raquo;</h5>
-            <div class="link-video">
-                <a class="fancybox" href="http://www.youtube.com/embed/NGdyaDnnrLM" title="Hyperion Sample Video">
-                    <img src="images/sample-images/front-img4.jpg" alt="" class="fade" />
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <div id="featured-wrapper2">
-        <div class="row front-feature-icon">
-            <div class="four columns mobile-one">
-                <img src="images/sample-images/front-icon1.png" alt="" class="img-center" />
-                <h5>We made Responsive design</h5>
-                <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-            </div>
-            <div class="four columns mobile-one">
-                <img src="images/sample-images/front-icon2.png" alt="" class="img-center" />
-                <h5>Complete pack of business idea</h5>
-                <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-            </div>
-            <div class="four columns mobile-one">
-                <img src="images/sample-images/front-icon3.png" alt="" class="img-center" />
-                <h5>Simple, Efficient, and Low cost</h5>
-                <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-            </div>
+    </section>
+</div>
+<!-- pagetitle end here --> 
+
+<!-- services start here -->
+<section id="content-wrapper">
+    <div class="row">
+        <div class="twelve columns serv-center">
+            <h3>Yale Consulting engagements focus one of the three following disciplines</h3>
+            <p> We are committed to understanding our clients' needs and delivering the most resourceful, timely, and actionable advice and marketing material.  An Engagement Manager will work with you to determine which division best fits the needs of your project.</p>
         </div>
     </div>
     
     <div class="row">
         <div class="twelve columns">
-            <div class="featured-box">
-                <div class="nine columns">
-                    <h5>Are you ready to Grow your business with Hyperion HTML Template?</h5>
-                    <p>Hyperion is a modern minimalist responsive HTML template created for business websites.</p>
+            <div class="divider"></div>
+        </div>
+    </div>
+       
+    <div class="row">
+        <div class="four columns">
+            <h5>Strategy</h5>
+            <img src="images/sample-images/services-icon1.png" alt="" class="img-left serv-mobile" />
+            <div class="serv-desc">
+              <p><u>Conceptualization</u></p>
+                <ul class="check">
+                  <li>Business plan formulation</li>
+                    <li>Product specification</li>
+              </ul>
+                <p><u>Research</u></p>
+                <ul class="check">
+                    <li>Market Research</li>
+                    <li>Focus Groups</li>
+              </ul>
+          </div>
+        </div>
+        <div class="four columns">
+            <h5>Marketing</h5>
+            <img src="images/sample-images/services-icon4.png" alt="" class="img-left serv-mobile" />
+            <div class="serv-desc">
+            <p><u>Advertising</u></p>
+                <ul class="check">
+                    <li> Connection to college campuses</li>
+                    <li> Viral campaigns</li>
+                </ul>
+            <p><u>Branding</u></p>
+                <ul class="check">
+                  <li> Logo Design</li>
+                  <li> Image Consulting</li>
+                </ul>
+            </div>
+        </div>
+        <div class="four columns">
+            <h5>Product</h5>
+            <img src="images/sample-images/services-icon2.png" alt="" class="img-left serv-mobile" />
+            <div class="serv-desc">
+            <p><u>Development</u></p>
+                <ul class="check">
+                    <li> Web Design</li>
+                    <li> Web Development</li>
+                </ul>
+            <p><u>Research</u></p>
+                <ul class="check">
+                  <li> Build Business Models </li>
+                  <li> Competitive Feature Analyses</li>
+                </ul>
+            </div>
+        </div>
+        <div class="twelve columns">
+            <p class="highlighttext"> Strategy Consulting</p>
+            <img src="images/strategy.png" alt="" class="img-left" />
+            <p> We have clientele ranging from multinational corporations to fledgling startups.  Our status as an undergraduate organization gives us a fresh perspective on twenty-first century market problems.  Strategy Consulting members are passionate about applying creative solutions to challenging issues, expediting the flow of information from native sources to clients, and using every opportunity to improve their breadth of knowledge.</p>
+            <p> Members of Strategy Consulting have gone on to internships and full-time positions with McKinsey and Co., the Boston Consulting Group, The Parthenon Group, and other major consulting firms.  In fact, the interview process for admittance to this division requires a case interview.  Members also practice case interviews as a group to develop a professional approach to problem solving and prepare for the job market after Yale. </p>
+            <p class="highlighttext"> Marketing Consulting</p>
+            <img src="images/marketing.png" alt="" class="img-right" />
+            <p>The Marketing Consulting branch applies fresh thinking and up-to-date methodologies to develop effective marketing strategies for our clients. For scalable, high-impact, and low-cost marketing campaigns we emphasize use of online portals and networks. As college students with dispodable incomes, we offer an unparalleled opportunity to take advantage of the latest trends relevant to Generation Y customers.  We also conduct marketing campaigns themselves, adverising services and products to students from the source they find most reliable - their peers.</p>
+            <p class="highlighttext">Product Development</p>
+            <img src="images/design.jpg" alt="" class="img-left" />
+            <p>The Product Development Group specializes in assisting clients in a wide array of programming oriented spaces, including Web 2.0 apps, mobile apps, big data analysis, and algorithm development.  Product Development Group recruits heavily from the Yale Computer Science department.  Members have received full-time and internship offers from large technology firms such as Google and Microsoft, as well as smaller startups like Pixorial and TripAdvisor.  In fact, application to the Product Development Group requires a technical interview with questions often used for development opportunities with the aforementioned firms.</p>
+            <p>Teams in this division also include business oriented members who would otherwise join a Strategy Consulting Team.  These members assess our clients' business models and product feature sets to ensure their programmer partners devote their resources to the creating technology well suited for problem at hand.</p>
+        </div>
+    </div>
+
+
+
+</section>
+<!-- services end here -->
+
+<!-- pagetitle start here -->
+<div class="label" id="div-portfolio">
+    <section id="pagetitle-wrapper">
+        <div class="pagetitle-content">    
+            <h2>Portfolio</h2>   
+        </div>
+    </section>
+</div>
+<!-- pagetitle end here -->
+
+<!-- porfolio content start here -->
+<section id="content-wrapper">
+    <div class="row">
+        <div class="twelve columns">
+            <div id="pf-filter">
+                <ul>
+                    <li><a href="" class="selected" data-filter="*">All</a></li>
+                    <li><a href="" data-filter=".consulting">Consulting</a></li>
+                    <li><a href="" data-filter=".marketing">Marketing</a></li>
+                </ul>
+            </div>
+            
+            <!-- divider line start here -->
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="divider"></div>
                 </div>
-                <div class="three columns">
-                    <a href="#" class="button medium gray arrow-icon">Try it free today</a>
-                </div>
-                <div class="clear"></div>
+            </div>
+            <!-- divider line end here -->
+            
+            <ul class="pf-box-4col">
+                <li class="marketing">
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/campusfood.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Campusfood.com</h5>         
+                </li>
+                <li class="marketing">
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/charigami.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Chairigami</h5>              
+                </li>
+                <li class="marketing">
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/have-to-have-big.jpeg" alt="" class="fade"/></a>                        
+                    </span>
+                <h5>Have to Have</h5>
+                </li>
+                <li class="consulting">
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/hotlist.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>The Hotlist</h5>         
+                </li>
+                <li class="marketing">
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/jw.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Jack Wills</h5>  
+                </li>
+                <li class="marketing">
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/kaplan.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Kaplan</h5>     
+                </li>
+                <li class="marketing">
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/Pfizer.gif" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Pfizer</h5>
+                </li>
+                <li class="consulting"> 
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/proximiant.png" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Proximiant</h5>     
+                </li>
+                <li class="marketing"> 
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/sahara.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Sahara Restaurant</h5>    
+                </li>
+                <li class="marketing"> 
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/tfa.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Teach For America</h5>    
+                </li>
+                <li class="consulting"> 
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/Yale_University_Logo.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Yale University</h5>     
+                </li>
+                <li class="consulting"> 
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/YCC-Logo.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>Yale College Council</h5>     
+                </li>
+                <li class="marketing"> 
+                    <span class="link-zoom"> 
+                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/zs.jpg" alt="" class="fade"/></a>                        
+                    </span>
+                    <h5>ZS Associates</h5>    
+                </li>             
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- porfolio content end here -->
+
+<!-- pagetitle start here -->
+<div class="label" id="div-contact">
+    <section id="pagetitle-wrapper">
+        <div class="pagetitle-content">    
+            <h2>Contact Us</h2>   
+        </div>
+    </section>
+</div>
+<!-- pagetitle ends here -->
+
+<!-- contact us start here -->
+<!-- google map start here -->
+<section id="map-wrapper">
+    <div id="map_canvas"></div>
+</section>
+<!-- google map end here -->
+
+<!-- maincontent start here -->
+<section id="content-wrapper">   
+    <div class="row">     
+        <div class="twelve columns">
+            <div class="panel stamp">
+            <h5>Contact Information</h5>
+            <p> Feel free to contact us for information on potential projects, recruiting, partnerships, sponsorships, and any other inquiries. </p>
+            <ul class="contact-info">
+            <li class="address-icon"> 
+              External Vice President: Vincent Yu - <a href="http://www.yaleuconsulting.com/vincent.yu@yale.edu">vincent.yu@yale.edu</a></li>
+            </ul>
             </div>
         </div>
     </div>
 </section>
-<!-- maincontent end here -->
+<!-- contact us end here -->
 
 <!-- footer start here -->
 <footer>
     <div class="row">
-        <div class="three columns mobile-two">
-            <img src="images/logo2.png" alt="" class="img-left" />
-            <p class="copyright-text">Copyright © 2012 by HYPERION. All rights reserved. The designs on this website are copyrighted material.</p>
-        </div>
-        <div class="three columns mobile-two">
-            <h5>Address</h5>
-            <ul>
-            	<li class="address-icon">Armistice Building<br/>Jakarta, JKT 1220<br/>PO BOX 1234</li>
-            	<li class="phone-icon">Phone : +621 55566671</li>
-            	<li class="email-icon">Email : info@crown.com</li>
-            </ul>
-        </div>
-        <div class="three columns mobile-two">
-            <h5>Company</h5>
-            <ul>
-                <li><a href="#">About Hyperion</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Press &amp; Media</a></li>
-                <li><a href="#">Environmental Impact</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="three columns mobile-two">
-            <h5>Flickr</h5>
-            <ul id="flck-thumb" class="thumbs"><li class="no-image"></li></ul>
-            
-            <!-- Noscript Notification when your Javascript not active -->
-            <div id="flickr-noscript">                	
-                <p>Can't load Flickr feed, please activate your javascript first...</p>
-            </div>
-            <!-- End of Noscript Notification when your Javascript not active -->
-        </div>
+        <p class="copyright-text">Copyright © 2012 by the Yale Undergraduate Consulting Group. All rights reserved.</p>
     </div>
 </footer>
 <!-- footer end here -->
-       	
+
 <script>$('#noscript').remove();</script>
 </body>
 </html>
