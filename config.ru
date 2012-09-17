@@ -8,7 +8,7 @@ map '/' do
       200, 
       {
         'Content-Type'  => 'text/html', 
-        'Cache-Control' => 'public, max-age=86400' 
+        'Cache-Control' => 'public, max-age=6400' 
       },
       File.open('public/index.html', File::RDONLY)
     ]
