@@ -4,4 +4,22 @@ TBD:
  - Post an address and a group contact email
  - Add second slide to slideshow
  - Check the Hyperion template for additional sources (in rack file but not linked in the website itself.)
- - Configure MX records?  (not sure if that needs to happen)
+ - Configure MX records?  (not sure if that needs to happen).  Make sure emails work from Google Apps
+ - Make Y higher resolution
+ - Make top bar static
+ - Remove contact section map
+ - Add application section
+ - Add busines inquiries section
+ - Source pictures
+ - Remove labels from portfolio section
+ - Add logo for Point WC
+ - Organize logos by year of project competion
+ - Alert people to know they should click a logo for more information on each project
+ - Switch the consulting logo to the three squares
+ - Remove ZS logo from featured clients list
+ - Remove slideshow, make it static
+ - Color balance the logos
+ - Pick a font form DaFont for logo replacement
+ - Create Admin panel (long-term)
+ - Create contact form and application form
+ - Do SEO
