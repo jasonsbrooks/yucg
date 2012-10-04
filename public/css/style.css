@@ -96,9 +96,10 @@ header {
 width: 100%;
 padding:1px 0px;
 background-color:#FFF;
-border-top: 5px solid #484848;
 border-bottom:1px solid #e2e2e2;
 float:left;
+position: fixed;
+z-index: 1;
 }
 
 #logo {
@@ -221,7 +222,7 @@ margin:8px 18px 0px -25px;
 /* Mainmenu styling */
 #mainmenu {
 width:auto;
-margin:3px 15px 29px 0px;
+margin:3px 15px 0px 0px;
 height:38px;
 float:right;
 }

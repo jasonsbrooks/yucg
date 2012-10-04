@@ -6,7 +6,7 @@ TBD:
  - Check the Hyperion template for additional sources (in rack file but not linked in the website itself.)
  - Configure MX records?  (not sure if that needs to happen).  Make sure emails work from Google Apps
  - Make Y higher resolution
- - Make top bar static
+ - Get top bar to float over labels
  - Remove contact section map
  - Add application section
  - Add busines inquiries section
