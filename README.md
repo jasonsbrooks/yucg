@@ -23,3 +23,5 @@ TBD:
  - Create Admin panel (long-term)
  - Create contact form and application form
  - Do SEO
+ - Make text of paragraphs larger and pull it in
+ - New slides correspond to strategy, marketing, and consulting with pictures
