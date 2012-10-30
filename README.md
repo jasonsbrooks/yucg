@@ -4,7 +4,7 @@ TBD:
  - Post an address and a group contact email
  - Add second slide to slideshow
  - Check the Hyperion template for additional sources (in rack file but not linked in the website itself.)
- - Configure MX records?  (not sure if that needs to happen).  Make sure emails work from Google Apps
+ - Configure MX records
  - Make Y higher resolution
  - Get top bar to float over labels
  - Remove contact section map
@@ -25,3 +25,6 @@ TBD:
  - Do SEO
  - Make text of paragraphs larger and pull it in
  - New slides correspond to strategy, marketing, and consulting with pictures
+ - Remove magnifying glass icon from portfolio images
+ - Fix bug where header is not on top in chrome
+ - Change header css to position fixed, top 0

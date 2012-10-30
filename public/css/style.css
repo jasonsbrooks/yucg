@@ -99,6 +99,7 @@ background-color:#FFF;
 border-bottom:1px solid #e2e2e2;
 float:left;
 position: fixed;
+top: 0;
 z-index: 1;
 }
 
