@@ -27,4 +27,5 @@ TBD:
  - New slides correspond to strategy, marketing, and consulting with pictures
  - Remove magnifying glass icon from portfolio images
  - Fix bug where header is not on top in chrome
- - Change header css to position fixed, top 0
+ - Remove little arrow
+ - For Mobile: Change links in header

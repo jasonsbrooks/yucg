@@ -2,6 +2,7 @@ use Rack::Static,
   :urls => ["/css", "/images", "/js"],
   :root => "public"
 
+
 map '/' do
   run Proc.new { |env|
     [

@@ -104,7 +104,8 @@ z-index: 1;
 }
 
 #logo {
-width: 148px;
+width: 78px;
+max-width: 78px;
 margin-top:2px;
 float: left;
 }
