@@ -481,7 +481,8 @@ float:left;
 }
 
 #camera-slide {
-height:440px !important;
+/*height:440px !important;*/
+height: 370px;
 }
 
 #slideshow-noscript {
