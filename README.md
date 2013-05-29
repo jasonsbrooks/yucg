@@ -5,38 +5,34 @@ Files edited:
 /js/fancybox.js
 /index.html
 
-Notes for Jason:
+Notes:
 
 - To start on local server, use: rackup
+- Check the Hyperion template for additional sources (in rack file but not linked in the website itself)
 
 TBD:
- - Get a picture of a guy coding for the product development page
  - Let people contact us through the contact form
+ 	- Create a form with fields: Name, Email, Message, CAPTCHA
+ 	- Submitting form sends message to someaddress@yucg.com (or a gmail)
  - Post an address and a group contact email
- - Add second slide to slideshow
- - Check the Hyperion template for additional sources (in rack file but not linked in the website itself.)
- - Configure MX records
- - Make Y higher resolution
+ - New slides correspond to strategy, marketing, and product with pictures
+ - Configure MX records (ie allow for yucg email addresses)
  - Get top bar to float over labels
- - Remove contact section map
  - Add application section
  - Add busines inquiries section
  - Source pictures
- - Remove labels from portfolio section
- - Add logo for Point WC
+ - Remove magnifying glasses from portfolio section 
+ - Add project modals for
+ 	- crunchbutton
+ 	- glassboard/keplr
+ 	- pointwc
+ 	- circle of women
+ 	- thetudu
+ 	- textbook friends
+ 	- vanderbilt consulting 
  - Organize logos by year of project competion
- - Alert people to know they should click a logo for more information on each project
- - Switch the consulting logo to the three squares
- - Remove ZS logo from featured clients list
- - Remove slideshow, make it static
- - Color balance the logos
- - Pick a font form DaFont for logo replacement
+ - Alert people to know they should click a logo for more information on each project via text
+ - Change font to TypeKit or DaFont
+ - Add jQuery animation for sliding from two divs on the same page
  - Create Admin panel (long-term)
- - Create contact form and application form
- - Do SEO already did a bit
- - Make text of paragraphs larger and pull it in
- - New slides correspond to strategy, marketing, and consulting with pictures
- - Remove magnifying glass icon from portfolio images
- - Fix bug where header is not on top in chrome
- - Remove little arrow
- - For Mobile: Change links in header
+ - Do SEO (already added metadata)
