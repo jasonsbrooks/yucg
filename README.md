@@ -1,3 +1,14 @@
+Files edited:
+
+*.css
+/images
+/js/fancybox.js
+/index.html
+
+Notes for Jason:
+
+- To start on local server, use: rackup
+
 TBD:
  - Get a picture of a guy coding for the product development page
  - Let people contact us through the contact form
@@ -22,7 +33,7 @@ TBD:
  - Pick a font form DaFont for logo replacement
  - Create Admin panel (long-term)
  - Create contact form and application form
- - Do SEO
+ - Do SEO already did a bit
  - Make text of paragraphs larger and pull it in
  - New slides correspond to strategy, marketing, and consulting with pictures
  - Remove magnifying glass icon from portfolio images
