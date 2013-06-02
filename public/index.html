@@ -47,6 +47,7 @@
 <script src="js/faq-functions.js" ></script>
 <script src="js/theme-functions.js"></script>
 <script src="js/jquery.googlemaps1.01.js"></script>
+<script src="js/yucg.js"></script>
 
 <script>
 $(document).ready(function() { 
@@ -106,13 +107,13 @@ $(document).ready(function() {
         <!-- mainmenu start here -->
         <nav id="mainmenu">
             <ul id="menu">
-                <li><a href="#div-home">home</a>
+                <li><a id="homelink" href="#">home</a>
                 </li>
-                <li><a href="#div-about">about</a></li>
-                <li><a href="#div-services">services</a></li>
-                <li><a href="#div-portfolio">portfolio</a>
+                <li><a id="aboutlink" href="#">about</a></li>
+                <li><a id="serviceslink" href="#">services</a></li>
+                <li><a id="portfoliolink" href="#">portfolio</a>
                 </li>
-                <li><a href="#div-contact">contact</a></li>
+                <li><a id="contactlink" href="#">contact</a></li>
             </ul>
         </nav>
         <!-- mainmenu end here -->
@@ -290,8 +291,10 @@ $(document).ready(function() {
             <div id="pf-filter">
                 <ul>
                     <li><a href="" class="selected" data-filter="*">All</a></li>
-                    <li><a href="" data-filter=".consulting">Consulting</a></li>
-                    <li><a href="" data-filter=".marketing">Marketing</a></li>
+                    <li><a href="" data-filter=".2012-2013">2012 - 2013</a></li>
+                    <li><a href="" data-filter=".2011-2012">2011 - 2012</a></li>
+                    <li><a href="" data-filter=".2010-2011">2010 - 2011</a></li>
+                    <li><a href="" data-filter=".2009-2010">2009 - 2010</a></li>
                 </ul>
             </div>
             <!-- divider line start here -->
@@ -303,11 +306,12 @@ $(document).ready(function() {
             <!-- divider line end here -->
             
             <ul class="pf-box-4col">
-                <li class="marketing">
+                <li class="2010-2011">
                     <span class="link-zoom"> 
-                        <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/campusfood.jpg" alt="" class="fade"/></a>
+                        <a class="fancybox" href="#campusfood-info" data-fancybox-group="gallery"><img src="images/portfolio-big/campusfood.jpg" alt="" class="fade"/></a>
                     </span>        
                 </li>
+                <!--
                 <li class="marketing">
                     <span class="link-zoom"> 
                         <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/charigami.jpg" alt="" class="fade"/></a>                        
@@ -367,11 +371,27 @@ $(document).ready(function() {
                     <span class="link-zoom"> 
                         <a class="fancybox" href="images/portfolio-big/comingsoon.png" data-fancybox-group="gallery" title="Hyperion - Modern Minimalist Responsive 3"><img src="images/portfolio-big/zs.jpg" alt="" class="fade"/></a>                        
                     </span>  
-                </li>             
+                </li>              -->
             </ul>
         </div>
     </div>
 </section>
+
+<!--COMPANY INFO-->
+<div id="company-info" style="display: none;">
+    <div id="campusfood-info">
+        <div class="company-container">
+            <div class="company-text-container">
+                <div class="title-container">
+                    <img src="images/portfolio-big/campusfood.jpg" />
+                    <span id="company-title">Campus Food</span>
+                </div>
+                <br />
+                <span id="company-text">Campusfood.com allows millions of students across the country to have easy access to a network of over 2500 restaurant.  Founded by President Michael Saunders in 1997, who was at that time a student at the University of Pennsylvannia, the organization now serves over 300 campuses.  The virtual food court allows students to place orders from their favorite local restaurants conveniently, making the hassle of ordering food over the phone a thing of the past.</span>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- porfolio content end here -->
 
 <!-- pagetitle start here -->
