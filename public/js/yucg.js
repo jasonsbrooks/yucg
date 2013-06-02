@@ -8,7 +8,7 @@ $(document).ready(function() {
         'slow');
   }
 
-  $("#mainmenu > ul > li > a").click(function(e) { 
+  $("#mainmenu > ul > a").click(function(e) { 
         // Prevent a page reload when a link is pressed
       e.preventDefault(); 
         // Call the scroll function
