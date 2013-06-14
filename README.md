@@ -12,6 +12,7 @@ Notes:
 
 TBD:
  - Let people contact us through the contact form
+  - Buy www.yucg.com 
  	- Create a form with fields: Name, Email, Message, CAPTCHA
  	- Submitting form sends message to someaddress@yucg.com (or a gmail)
  - Post an address and a group contact email

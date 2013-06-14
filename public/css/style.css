@@ -222,6 +222,10 @@ margin:8px 18px 0px -25px;
 }
 
 /* Mainmenu styling */
+
+/* The main menu used to use the styling order: nav#mainmenu -> ul -> li -> a
+However, we changed the order to: nav#mainmenu -> ul -> a -> li */
+
 #mainmenu {
 width:auto;
 margin:3px 15px 0px 0px;
@@ -256,6 +260,11 @@ z-index:200;
 }
 
 #mainmenu ul li a, #mainmenu ul li a:visited {
+color:#bbb;
+text-decoration:none;
+}
+
+#mainmenu ul a, #mainmenu ul a:visited {
 color:#bbb;
 text-decoration:none;
 }
@@ -302,7 +311,7 @@ text-decoration:none;
 color:#bbb;
 }
 
-#mainmenu ul li.selected ul li a, #mainmenu ul li.selected ul li a:hover{
+#mainmenu ul li.selected ul li a, #mainmenu ul li.selected ul li a:hover{ 
 color:#bbb;
 background-image:none;
 }
@@ -2777,6 +2786,8 @@ form#comment-form .buttoncontact, form#contactform .buttoncontact {width:40%;}
 
 .company-text-container img{
 	height: 100px;
+	float: left;
+	margin: 0px 8px 8px 0px;
 }
 
 #company-text{
@@ -2791,20 +2802,15 @@ form#comment-form .buttoncontact, form#contactform .buttoncontact {width:40%;}
 	display: block;
 }
 
-#company-title{
+/*#company-title{
 	font-size: 100px;
 	margin-bottom: 8px;
 	margin-left: 15px;
 	text-align: center;
 	display: inline;
-}
+}*/
 
 #company-subhead{
 	font-size: 30px;
-}
-
-.title-container{
-	margin: auto;
-	text-align: center;
 }
 
