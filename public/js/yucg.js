@@ -4,7 +4,7 @@ $(document).ready(function() {
     id = id.replace("link", "");
       // Scroll
     $('html,body').animate({
-        scrollTop: $("#div-"+id).offset().top-55},
+        scrollTop: $("#div-"+id).offset().top-70},
         'slow');
   }
 

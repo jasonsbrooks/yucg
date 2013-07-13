@@ -41,6 +41,7 @@ clear:both;
 width: 100%;
 background:#f2f2f2 url(../images/slide-shadow.png) top repeat-x;
 float:left;	
+margin-top: -16px;
 }
 
 .pagetitle-content {
@@ -269,6 +270,10 @@ color:#bbb;
 text-decoration:none;
 }
 
+#mainmenu ul li a{
+padding:10px;
+}
+
 #mainmenu ul li li a {
 display:block;
 float:left;
@@ -490,7 +495,8 @@ margin:0px 7px 7px 0px;
 #slideshow-wrapper {
 width: 100%;
 background:#f2f2f2 url(../images/slide-shadow.png) top repeat-x;
-float:left;	
+margin-top: 60px;
+display: block;
 }
 
 #camera-slide {
