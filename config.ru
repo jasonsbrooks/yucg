@@ -15,3 +15,16 @@ map '/' do
     ]
   }
 end
+
+map '/google3dff47721b18f8a.html' do
+  run Proc.new { |env|
+    [
+      200, 
+      {
+        'Content-Type'  => 'text/html', 
+        'Cache-Control' => 'public, max-age=6400' 
+      },
+      File.open('public/google3dff47721b18f88a.html', File::RDONLY)
+    ]
+  }
+end
