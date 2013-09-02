@@ -2792,8 +2792,8 @@ form#comment-form .buttoncontact, form#contactform .buttoncontact {width:40%;}
 
 .company-text-container img{
 	height: 100px;
-	float: left;
-	margin: 0px 8px 8px 0px;
+	display: block;
+	margin: auto;
 }
 
 #company-text{
