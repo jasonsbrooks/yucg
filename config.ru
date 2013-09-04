@@ -16,7 +16,7 @@ map '/' do
   }
 end
 
-map '/google3dff47721b18f8a.html' do
+map '/google3dff47721b18f88a' do
   run Proc.new { |env|
     [
       200, 
