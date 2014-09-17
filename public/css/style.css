@@ -9,6 +9,39 @@ margin:0;
 padding:0;
 }
 
+.bio.twelve.columns {
+	line-height: 24px;
+	width: 50%;
+	margin-left: 8%;
+	display: inline-block;
+	height: 250px;
+}
+
+.row > h5 {
+	padding: 0 18px;
+}
+
+.row {
+	margin-top: 30px;
+}
+
+
+
+
+.profile_photo {
+	padding: 0 18px;
+	width: 30%;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+}
+
+.profile_photo > img {
+	max-height: 250px;
+}
+
+
+
 
 /***** Shared Stylesheet *****/
 #main-wrapper {
