@@ -14,7 +14,7 @@ padding:0;
 	width: 50%;
 	margin-left: 8%;
 	display: inline-block;
-	height: 250px;
+	max-height: 250px;
 }
 
 .row > h5 {
